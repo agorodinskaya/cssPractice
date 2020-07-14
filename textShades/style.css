@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 1em;
+}
+
+body {
+  background-color: #00214d;
+  color: #ddd;
+  font-family: "PT Sans", sans-serif;
+}
+
+.wrapper {
+  background-color: #fde24f;
+  border: 1px solid hotpink;
+  box-shadow: 10px 5px 5px grey;
+  color: black;
+}
+.one {
+  text-shadow: 2px 2px grey;
+}
+.two {
+  text-shadow: 4px 10px 2px grey;
+}
+.three {
+  text-shadow: 6px 15px 4px grey;
+}
+.four {
+  text-shadow: 12px 26px 5px grey;
+}
