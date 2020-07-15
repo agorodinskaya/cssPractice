@@ -1,0 +1,180 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: #f2f7f5;\
+  color: #282833;
+  /* font: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal; */
+  font: normal 16px Arial, sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: #00473e
+}
+
+a:hover {
+  color: #E0218A;
+}
+
+a:active{
+  color: #96179C;
+}
+
+/* a:visited{
+  color: #ebe67a;
+} */
+
+.clr {
+  clear:both;
+}
+.button {
+  background-color: #faae2b;
+  color: #00473e;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover {
+  background: #fa5246;
+  color: #f2f7f5;
+}
+.box-1 {
+  background-color: #475d5b;
+  color: #fff;
+  border: 5px double #0C170C;
+  /* border-style: double; */
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 800px;
+  font-style: italic;
+  text-decoration: underline;
+  tedxt-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2 {
+  border: 3px dotted #0C170C;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px #333 solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  padding: 0;
+  list-style: none;
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: 1px #333  dotted;
+  /* list-style-image: url(304167.png); */
+
+}
+.my-form {
+  padding:20px;
+
+}
+
+.form-group{
+  padding-bottom: 15px;
+}
+.my-form label {
+  display: block;
+}
+.my-form input [type="text"], .my-form textarea {
+  padding: 8px;
+  width: 50%;
+}
+
+/* .my-form input[type="submit"]{
+  background-color: #333;
+  color: #ffff;
+  padding: 10px 15px;
+  border: none;
+} */
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#main-block{
+  float: left;
+  width: 70%;
+}
+#sidebar{
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #ffff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.p-box{
+  width: 800px;
+  height: 500px;
+  border: 1px solid #333;
+  margin-top: 300px;
+  position: relative;
+  background-image: url(bridge.jpg);
+  background-repeat: no-repeat;
+  /* background-position: 300px 200px; */
+  background-position: center center;
+}
+
+.p-box h1 {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+.p-box h2 {
+  position: absolute;
+  top: 20px;
+  bottom: 200px;
+  right: 100px;
+}
+.fixme{
+position:fixed;
+top: 400px;
+}
+
+.my-list li:first-child {
+  background: salmon;
+
+}
+.my-list li:last-child {
+  background: skyblue;
+
+}
+
+.my-list li:nth-child(5){
+  background: hotpink;
+}
+.my-list li:nth-child(even){
+  background: #ffd803;
+}
