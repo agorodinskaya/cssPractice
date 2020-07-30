@@ -4,7 +4,7 @@
 } */
 
 body {
-  background-color: #f2f7f5;\
+  background-color: #f2f7f5;
   color: #282833;
   /* font: Helvetica, sans-serif;
   font-size: 16px;
@@ -62,7 +62,7 @@ a:active{
   font-weight: 800px;
   font-style: italic;
   text-decoration: underline;
-  tedxt-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
   word-spacing: 1em;
 }
