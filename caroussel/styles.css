@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  background-color: #faeee7;
+  color: #33272a;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button{
+    padding: 0.5rem;
+    margin: 10px;
+    background-color: #ffc0ad;
+    color: #33272a;    
+}
+.caroussel {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#city {
+  text-align: center;
+  margin: 10px;
+}
+
+.img-container {
+/*   position: relative; */
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+#pic-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+/*   position: relative; */
+}
+
+
+
