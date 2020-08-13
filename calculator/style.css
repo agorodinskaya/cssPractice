@@ -95,3 +95,18 @@ a {
 a:hover {
   color: var(--color-right-button);
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+  .container{
+    /* justify-content: center; */
+    grid-template-columns: repeat(4, 65px);
+    grid-gap: 0.2rem;
+  }
+  .display {
+  font-size: 3rem;  
+  text-align: right;
+  }
+  button{
+    font-size: 1rem;
+  }
+}
