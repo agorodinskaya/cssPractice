@@ -16,7 +16,7 @@ buttons.addEventListener("click", e => {
         const action = clicked.dataset.action;
         const clickedContent = clicked.textContent;
         const displayedNum = display.textContent;
-        // Remove .is-depressed class from all keys
+        // Remove .is-depressed class from all clicked
         Array.from(clicked.parentNode.children).forEach((k) =>
             k.classList.remove("is-depressed")
         );
