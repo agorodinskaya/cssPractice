@@ -16,6 +16,11 @@ buttons.addEventListener("click", e => {
         const action = clicked.dataset.action;
         const clickedContent = clicked.textContent;
         const displayedNum = display.textContent;
+        // Remove .is-depressed class from all keys
+        Array.from(clicked.parentNode.children).forEach((k) =>
+            k.classList.remove("is-depressed")
+        );
+
         const previousKeyType = calculator.dataset.previousKeyType;
 
         if (!action) {
@@ -36,21 +41,22 @@ buttons.addEventListener("click", e => {
             const firstValue = calculator.dataset.firstValue;
             const operator = calculator.dataset.operator;
             const secondValue = displayedNum;
+
             if (
                 firstValue &&
                 operator &&
                 previousKeyType !== 'operator' &&
                 previousKeyType !== 'calculate'
             ) {
-                const calcValue = operations(firstValue, operator, secondValue);
-                display.textContent = calcValue;
-                calculator.dataset.firstValue = calcValue;
+                const calcValue = operations(firstValue, operator, secondValue)
+                display.textContent = calcValue
+                calculator.dataset.firstValue = calcValue
             } else {
-                calculator.dataset.firstValue = displayedNum;
+                calculator.dataset.firstValue = displayedNum
             }
+
             clicked.classList.add('is-depressed');
             calculator.dataset.previousKeyType = 'operator';
-            calculator.dataset.firstValue = displayedNum;
             calculator.dataset.operator = action;
         }
         if (action === 'decimal') {
