@@ -30,8 +30,8 @@ buttons.addEventListener("click", e => {
             action === 'add' ||
             action === 'subtract' ||
             action === 'multiply' ||
-            action === 'divide' ||
-            action === 'percent'
+            action === 'divide'
+            // action === 'percent'
         ) {
             const firstValue = calculator.dataset.firstValue;
             const operator = calculator.dataset.operator;
@@ -42,7 +42,7 @@ buttons.addEventListener("click", e => {
                 previousKeyType !== 'operator' &&
                 previousKeyType !== 'calculate'
             ) {
-                const calcValue = calculate(firstValue, operator, secondValue);
+                const calcValue = operations(firstValue, operator, secondValue);
                 display.textContent = calcValue;
                 calculator.dataset.firstValue = calcValue;
             } else {
@@ -86,23 +86,36 @@ buttons.addEventListener("click", e => {
         }
     }
 
-    
+
 });
 
 // math operations to perform calculations - working +, -, *, / => % and brackets in progress. function called on line 83.
 const operations = (x, operator, y) => {
     let result;
     if (operator === 'add') {
-        result = parseFloat(x) + parseFloat(y)
+        result = (parseFloat(x) + parseFloat(y)).toFixed(2)
     } else if (operator === 'subtract') {
-        result = parseFloat(x) - parseFloat(y)
+        result = (parseFloat(x) - parseFloat(y)).toFixed(2)
     } else if (operator === 'multiply') {
-        result = parseFloat(x) * parseFloat(y)
+        result = (parseFloat(x) * parseFloat(y)).toFixed(2);
     } else if (operator === 'divide') {
-        result = parseFloat(x) / parseFloat(y)
-    } else if (operator === 'percent') {
-        result = x / 100
+        if (y === '0') {
+            display.style.background = "#ef4565";
+            display.style.fontSize = "2rem"
+            result = "error: cannot divide by 0";
+            setTimeout(function () {
+                display.style.background = "#72757e";
+                display.textContent = '0';
+                calculator.dataset.firstValue = '';
+                calculator.dataset.modValue = '';
+                calculator.dataset.operator = '';
+                calculator.dataset.previousKeyType = '';
+                display.style.fontSize = "4rem"
+            }, 1000);
+        } else result = (parseFloat(x) / parseFloat(y)).toFixed(2)
+        // } else if (operator === 'percent') {
+        //     result = x / 100
     }
-    console.log(result)
-    return result.toFixed(2)
+    // console.log(result)
+    return result
 }
