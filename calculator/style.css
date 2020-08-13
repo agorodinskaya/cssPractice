@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+:root {
+  --background-color: #16161a;
+  --calc-background: #72757e;
+  --calc-display: #94a1b2;
+  --color-light: #fffffe;
+  --color-top: #b8c1ec;
+  --color-top-hover: #eebbc3;
+  --color-hover: #b8c1ec;
+  --color-display-hover: #fec7d7;
+  /* --shadow: 0 1px 5px #90b4ce; */
+  --color-right-button: #ef4565;
+  --color-right-hover: #ff8906;
+  --color-button: #7f5af0;
+  --button-hover: #2cb67d;
+  /* --color-btnhover: #3da9fc; */
+  --font-primary: 'Source Code Pro', monospace;
+  --font-heading: 'Indie Flower', cursive;
+}
+
+body {
+  font-size: 2rem;
+  background-color:var(--background-color);
+  font-family: var(--font-primary);
+}
+
+h1{
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--color-light);
+}
+button{
+  font-size: 2rem;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
+  /* grid-template-rows: repeat(6, 1fr); */
+  grid-gap: 0.5rem;
+}
+.display {
+  font-size: 4rem;  
+  grid-column: span 4;
+  background-color: var(--calc-background);
+  color: var(--color-light);
+  text-align: right;
+}
+.display:hover{
+  background-color: var(--color-display-hover);
+}
+.btn {
+  background-color:var(--color-button);
+  border: none;
+  color:var(--color-light);
+  padding: 20px;
+  text-align: center;
+}
+.btn:hover{
+  background-color: var(--button-hover);
+}
+.top {
+  background-color:var(--color-top);
+  color: black;
+}
+.top:hover{
+    background-color: var(--color-top-hover);
+}
+.right {
+  
+  background-color: var(--color-right-button);
+}
+.right:hover{
+    background-color: var(--color-right-hover);
+}
+.equal {
+  grid-row: 6/6;
+  grid-column: 3/5;
+}
+p{
+  color: var(--color-top);
+  /* text-align: center; */
+  font-size: 1.2rem;
+}
+a {
+  color: var(--color-right-hover);
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: var(--color-right-button);
+}
