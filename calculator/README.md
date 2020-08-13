@@ -7,7 +7,7 @@ This calculator has been built using the following:
 
 ### External guides :
 This project has been created following tutorial :
-[FreeCodeCamp link] (https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/)
+[FreeCodeCamp link](https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/)
 
 ## Functionality: 
 
@@ -17,4 +17,4 @@ This project has been created following tutorial :
 * The calculator performs the basic mathematical operations (+ - x / ).
 * The calculator performs operations with decimal numbers.
 * The calculator clear to zero the current value.
-* The calculatror shows an error message when the user tries to divide by zero.
+* The calculator shows an error message when the user tries to divide by zero.
