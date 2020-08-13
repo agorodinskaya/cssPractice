@@ -22,7 +22,7 @@ The calculator meets the following requirements :
 * The calculator clear to zero the current value.
 * The calculator shows an error message when the user tries to divide by zero.
 
-![Demo UI Page!](/calculator.gif "Landing Page")
+![Demo calculator](Calculator.gif)
 
 ## Wishlist :
 
