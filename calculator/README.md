@@ -5,7 +5,7 @@ This calculator has been built using the following technologies:
 * HTML 5
 * CSS - grid layout
 
-Live version of calculator can be found here: [Calculator Link](https://agorodinskaya.github.io/practice/calculator/index.html)
+Life version of calculator can be found here: [Calculator Link](https://agorodinskaya.github.io/practice/calculator/index.html)
 
 #### External guides :
 This project has been created as part of assessment for Generation Australia following tutorial :
