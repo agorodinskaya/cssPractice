@@ -27,10 +27,11 @@ The calculator meets the following requirements :
 ## Wishlist :
 
 * Refactor the code and add class/ classes instead
+* Fix the existing bugs (please see the secion known bugs)
 * Add more functionalities (e.g. brackets, percentage)
 * Make version with more functions
 
-### Known bugs :
+#### Known bugs :
 
 Some bugs are :
 1. the caulclator keeps the first number stored and uses it for the next operation if the clear button has not been pressed:
