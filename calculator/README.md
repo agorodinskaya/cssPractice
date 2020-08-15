@@ -8,8 +8,8 @@ This calculator has been built using the following technologies:
 Life version of calculator can be found here: [Calculator Link](https://agorodinskaya.github.io/practice/calculator/index.html)
 
 #### External guides :
-This project has been created as part of assessment for Generation Australia following tutorial :
-[FreeCodeCamp link](https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/)
+This project has been created as part of assessment for Generation Australia following tutorial from freecodecamp, please follow the link to see it:
+[FreeCodeCamp](https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/)
 
 ## Functionality: 
 
