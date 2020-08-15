@@ -26,6 +26,7 @@ The calculator meets the following requirements :
 
 ## Wishlist :
 
+* Refactor the code and add class/ classes instead
 * Add more functionalities (e.g. brackets, percentage)
 * Make version with more functions
 

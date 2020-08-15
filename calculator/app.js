@@ -101,7 +101,7 @@ buttons.addEventListener("click", e => {
     }
 });
 
-// math operations to perform calculations - working +, -, *, / => % and brackets in progress. function called on line 83.
+// math operations to perform calculations - working +, -, *, / => % and brackets in progress. function called on lines 54 and 97.
 // if operator is divide and y === "0" => show error message. lines 118 - 130.
 const operations = (x, operator, y) => {
     let result;
