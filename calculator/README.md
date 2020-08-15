@@ -22,7 +22,7 @@ The calculator meets the following requirements :
 * The calculator clear to zero the current value.
 * The calculator shows an error message when the user tries to divide by zero.
 
-![Demo calculator](Calculator.gif)
+![Demo calculator](demo/Calculator.gif)
 
 ## Wishlist :
 
@@ -36,11 +36,11 @@ The calculator meets the following requirements :
 Some bugs are :
 1. the caulclator keeps the first number stored and uses it for the next operation if the clear button has not been pressed:
 
-    ![Demo bug1](Calculatorbug1.gif)
+    ![Demo bug1](demo/Calculatorbug1.gif)
     
 2. the calculator performs operations even if the second number has not been selected :
 
-    ![Demo bug2](Calculatorbug2.gif)
+    ![Demo bug2](demo/Calculatorbug2.gif)
 
 The app is in process of testing, bugs will be fixed.
 
