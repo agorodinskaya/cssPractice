@@ -33,9 +33,12 @@ The calculator meets the following requirements :
 ### Known bugs :
 
 Some bugs are :
-    * the caulclator keeps the first number stored and uses it for the next operation if the clear button has not been pressed:
+1. the caulclator keeps the first number stored and uses it for the next operation if the clear button has not been pressed:
+
     ![Demo bug1](Calculatorbug1.gif)
-    * the calculator performs operations even if the second number has not been selected :
+    
+2. the calculator performs operations even if the second number has not been selected :
+
     ![Demo bug2](Calculatorbug2.gif)
 
 The app is in process of testing, bugs will be fixed.
