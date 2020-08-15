@@ -5,10 +5,10 @@ const calculator = document.querySelector('.calculator');
 const buttons = document.querySelector('.buttons');
 const display = document.querySelector('.display');
 
-// calculator buttons event listener => since buttons are .calculators children, add event delegaiton pattern to listen to buttons press:
-//if button has action attribute it is either operator, decimal, equal or clear. Without data-action attribute it is numebr. 
+// calculator buttons event listener => since buttons are .calculators children, add event delegation pattern to listen to buttons press:
+//if button has action attribute it is either operator, decimal, equal or clear. Without data-action attribute it is number. 
 //decimal adds dot; 
-//equal performs the calculation using the formulas from line 90; 
+//equal performs the calculation using the formulas from line 104; 
 //clear - sets values to 0;  
 // no action - numbers: 
 buttons.addEventListener("click", e => {
@@ -21,7 +21,6 @@ buttons.addEventListener("click", e => {
         Array.from(clicked.parentNode.children).forEach((k) =>
             k.classList.remove("is-depressed")
         );
-
         const previousKeyType = calculator.dataset.previousKeyType;
 
         //If the calculator's display shows 0, replace it with clicked number on the button.
@@ -100,8 +99,6 @@ buttons.addEventListener("click", e => {
             calculator.dataset.previousKeyType = 'calculate';
         }
     }
-
-
 });
 
 // math operations to perform calculations - working +, -, *, / => % and brackets in progress. function called on line 83.
@@ -129,8 +126,8 @@ const operations = (x, operator, y) => {
                 display.style.fontSize = "4rem"
             }, 1000);
         } else result = (parseFloat(x) / parseFloat(y)).toFixed(2)
-        // } else if (operator === 'percent') {
-        //     result = x / 100
+    // } else if (operator === 'percent') {
+    //     result = x / 100
     }
     // console.log(result)
     return result
