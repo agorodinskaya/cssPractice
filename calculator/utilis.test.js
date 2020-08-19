@@ -35,7 +35,7 @@ test("divide 8 / 2 NOT equals 3.00", () => {
   expect(operations(8, "divide", 2)).not.toBe("3.00");
 });
 
-// 1 unit tests decimals:
+// 2 unit tests decimals:
 test("decimals 6 / 5 equals 1.20", () => {
   expect(operations(6, "divide", 5)).toBe("1.20");
 });
@@ -67,3 +67,5 @@ test("values are set to zero or empty string", () => {
   expect(clear().previousKeyType).toBe("");
   expect(clear().textContent).toBe(0);
 });
+
+// decimal testing for display:

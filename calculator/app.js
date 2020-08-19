@@ -105,7 +105,23 @@ buttons.addEventListener("click", (e) => {
           firstValue = displayedNum;
           secondValue = calculator.dataset.modValue;
         }
-        display.textContent = operations(firstValue, operator, secondValue); // call function from line 104 based on the action chosen
+        // error - cannot divide by 0 :
+        if (operations(firstValue, operator, secondValue) === "error1") {
+          display.textContent = "Error, cannot divide by 0";
+          display.style.background = "#ef4565";
+          display.style.fontSize = "2rem";
+          setTimeout(function () {
+            display.style.background = "#72757e";
+            display.textContent = firstValue;
+            calculator.dataset.firstValue = "";
+            calculator.dataset.modValue = "";
+            calculator.dataset.operator = "";
+            calculator.dataset.previousKeyType = "";
+            display.style.fontSize = "4rem";
+          }, 1000);
+        } // display when no error:
+        else
+          display.textContent = operations(firstValue, operator, secondValue); // call function from line 104 based on the action chosen
       }
       calculator.dataset.previousKeyType = "calculate";
     }
