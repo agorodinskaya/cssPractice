@@ -49,6 +49,9 @@ button{
   background-color: var(--calc-background);
   color: var(--color-light);
   text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 10vh;
 }
 .display:hover{
   background-color: var(--color-display-hover);

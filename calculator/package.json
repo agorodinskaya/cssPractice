@@ -1,0 +1,20 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "This calculator has been built using the following technologies: * Vanilla Javascript * HTML 5 * CSS - grid layout",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.0",
+    "parcel": "^1.12.4"
+  }
+}

@@ -1,4 +1,5 @@
-
+import {operations} from "./utilis"
+import {clear} from "./utilis"
 // declarations :
 const calculator = document.querySelector('.calculator');
 // buttons are children of .calculator:
@@ -77,12 +78,14 @@ buttons.addEventListener("click", e => {
         }
         // if action clear => set all the values to intial / zero, set the previousKeyType to "clear":
         if (action === 'clear') {
-            calculator.dataset.firstValue = '';
-            calculator.dataset.modValue = '';
-            calculator.dataset.operator = '';
-            calculator.dataset.previousKeyType = '';
-            display.textContent = 0;
-            calculator.dataset.previousKeyType = 'clear';
+            calculator.dataset.firstValue = clear().firstValue;
+            // console.log(clear().firstValue)
+            // console.log(typeof calculator.dataset.firstValue, calculator.dataset.firstValue)
+            calculator.dataset.modValue = clear().modValue;
+            calculator.dataset.operator = clear().operator;
+            calculator.dataset.previousKeyType = clear().previousKeyType;
+            display.textContent = clear().textContent;
+            calculator.dataset.previousKeyType = clear().previousKeyType;
         } 
         // if action is caculate use the stored info (first, operator, second) to perform the calculation
         if (action === 'calculate') {
@@ -93,7 +96,7 @@ buttons.addEventListener("click", e => {
                 if (previousKeyType === 'calculate') {
                     firstValue = displayedNum;
                     secondValue = calculator.dataset.modValue;
-                }
+                } 
                 display.textContent = operations(firstValue, operator, secondValue); // call function from line 104 based on the action chosen
             }
             calculator.dataset.previousKeyType = 'calculate';
@@ -103,32 +106,3 @@ buttons.addEventListener("click", e => {
 
 // math operations to perform calculations - working +, -, *, / => % and brackets in progress. function called on lines 54 and 97.
 // if operator is divide and y === "0" => show error message. lines 118 - 130.
-const operations = (x, operator, y) => {
-    let result;
-    if (operator === 'add') {
-        result = (parseFloat(x) + parseFloat(y)).toFixed(2)
-    } else if (operator === 'subtract') {
-        result = (parseFloat(x) - parseFloat(y)).toFixed(2)
-    } else if (operator === 'multiply') {
-        result = (parseFloat(x) * parseFloat(y)).toFixed(2);
-    } else if (operator === 'divide') {
-        if (y === '0') {
-            display.style.background = "#ef4565";
-            display.style.fontSize = "2rem"
-            result = "error: cannot divide by 0";
-            setTimeout(function () {
-                display.style.background = "#72757e";
-                display.textContent = '0';
-                calculator.dataset.firstValue = '';
-                calculator.dataset.modValue = '';
-                calculator.dataset.operator = '';
-                calculator.dataset.previousKeyType = '';
-                display.style.fontSize = "4rem"
-            }, 1000);
-        } else result = (parseFloat(x) / parseFloat(y)).toFixed(2)
-    // } else if (operator === 'percent') {
-    //     result = x / 100
-    }
-    // console.log(result)
-    return result
-}
