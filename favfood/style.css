@@ -94,10 +94,9 @@ img {
   color: var(--color);
   display: block;
   text-decoration: none;
-
   padding: 10px;
   text-align: center;
-  font-size: 20px;
+  font-size: 1rem;
 }
 [aria-controls="menu-list"] {
   display: none;
@@ -154,4 +153,56 @@ img {
 }
 .gallery h2:after {
   background: linear-gradient(to right, var(--button), transparent);
+}
+@media (max-width: 1000px) {
+  .menu {
+    order: -1;
+  }
+  [aria-controls="menu-list"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .menu ul {
+    max-height: 0;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+  }
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .top {
+    grid-template-areas:
+      "hero hero"
+      "cta1 cta2";
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .menu a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .top {
+    grid-template-areas:
+      "hero"
+      "cta1"
+      "cta2";
+  }
+  .menu a {
+    font-size: 0.7rem;
+  }
 }
