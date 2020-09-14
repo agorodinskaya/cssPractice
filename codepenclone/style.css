@@ -67,8 +67,27 @@ h6 {
   grid-gap: 5px;
   background: rgba(0, 0, 0, 0.1);
 }
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.editor__number {
+  display: block;
+  padding: 0 10px;
+}
+
+.editor__input {
+  resize: none;
+  /* background: none; */
+  border: 0;
+  color: #343436;
+  font-size: 16px;
+  line-height: 25px;
+}
 
 /* Pen: */
+
 .pen {
   display: grid;
   grid-template-columns: 1fr;
@@ -108,4 +127,10 @@ h6 {
   position: absolute;
   left: 3px;
   top: 3px;
+}
+/* footer */
+.settings {
+  padding: 5px;
+  background-color: var(--backgd);
+  border-top: 1px solid grey;
 }
