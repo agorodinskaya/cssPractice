@@ -83,7 +83,8 @@ h6 {
   border: 0;
   color: #343436;
   font-size: 16px;
-  line-height: 25px;
+  /* line-height: 25px; */
+  height: 360px;
 }
 
 /* Pen: */
