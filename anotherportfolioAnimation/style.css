@@ -1,0 +1,96 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+:root {
+  --primary-color: #232946;
+  --color-light: #fffffe;
+  --color-footer: #b8c1ec;
+  --color-main: #eebbc3;
+  --color-hover: #b8c1ec;
+  /* --shadow: 0 1px 5px #90b4ce; */
+  --color-link: #ef4565;
+  /* --color-btnhover: #3da9fc; */
+
+}
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  color: var(--color-light);
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+header {
+  background: var(--primary-color);
+  padding: 2rem;
+}
+
+main {
+  background: var(--color-main);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+a:hover {
+  color: var(--color-hover);
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background:var(--color-footer);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* img {
+  width: 100%;
+  display: block;
+}
+.img-container {
+position: relative; 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+#pic-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+} */
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 1.5s;        
+  animation-iteration-count: 2;
+  transform-origin: 100% 70%;    
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(20.0deg) } 
+   20% { transform: rotate(-20.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-10.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+}

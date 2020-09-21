@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Lato|Raleway|Special+Elite');
+
+/* font-family: 'Special Elite', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+body, html {
+  height:100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+/* Sticky Navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #007bb5;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  /* position: fixed; */
+  top: 0;
+  /* width: 100%; */
+}
+
+.sticky + .content {
+  padding-top: 60px;
+  z-index: 1;
+}
+
+/*END */
+
+/* Parallax background images: */
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  /* opacity: 0.8; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.pimg1{
+  background-image: url('art0.jpg');
+  min-height: 100%;
+}
+.pimg2{
+  background-image: url('art3.jpg');
+  min-height: 600px;
+}
+.pimg3{
+  background-image: url('art2.jpg');
+  min-height: 600px;
+
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.bout{
+  position: absolute;
+  top:30%;
+  left: 15%;
+  right: 40%;
+  width: 70%;
+  text-align: center;
+
+}
+/*END */
+
+/* my contact details */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
+
+
+.fa-mobile-phone {
+  background: grey;
+  color: white;
+}
+/* END */
+
+/* Projects section: */
+.btn{
+  background-color: #4197f4;
+  border: 2px solid #4197f4;
+  border-radius: 6px;
+  padding: 16px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  color: white;
+  min-width: 120px;
+  min-height: 50px;
+}
+
+.link{
+  color: white;
+}
+
+.proj {
+    max-width: 90%;
+    margin: auto;
+}
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 23.5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pr{
+  width: 50%;
+  height: 50%;
+}
+
+.content {
+    background-color: rgb(227, 233, 242, 0.8);
+    padding: 10px;
+    color: black;
+    font-size: 12px;
+    height: 90%;
+}
+iframe {
+  margin-top: 30px;
+  margin-left: 50px;
+  float: top;
+}
+
+/* END */
+
+
+/* responsive */
+@media(max-width:500px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment:scroll;
+   }
+   #navbar, .bout, .section, .content{
+     font-size: 10px;
+   }
+   .bout{
+     width: 80%;
+     position: absolute;
+     top:10%;
+     left: 15%;
+     right: 40%;
+     bottom: 10%
+     text-align: center;
+   }
+   .btn{
+      display: inline-block;
+      min-width: 50px;
+      min-height: 15px;
+   }
+   .content{
+     height: 25%;
+   }
+   .column{
+     width: 100%;
+   }
+   iframe {
+    margin-left:70px;
+    margin-top: 50px;
+    float: top;
+    width: 240px;
+    height:200px;
+   }
+}
+@media(max-width:720px) {
+   .content{
+     height: 25%;
+   }
+   .pr{
+     width: 50%;
+     /* height: 10%; */
+   }
+   .column{
+     width: 80%;
+   }
+
+}
